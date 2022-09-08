@@ -1,0 +1,153 @@
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: hsl(30, 38%, 92%);
+}
+
+.contenedor{
+    max-width: 67rem;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 2.3rem;
+}
+
+.main{
+    display: flex;
+    margin-top: 20rem;
+}
+
+.img-izquierda{
+    width: 50%;
+}
+
+.img-izquierda img{
+    border-radius: 1rem 0 0 1rem;
+}
+
+
+.descrp-derecha{
+    background-color: hsl(0, 0%, 100%);
+    width: 50%;
+    padding: 4rem 4rem;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.perfume{
+    color: hsl(228, 12%, 48%);
+    text-transform: uppercase;
+    letter-spacing: .9rem;
+    font-size: 1.5rem;
+}
+
+.descrp-derecha .descrp-producto{
+    color: hsl(228, 12%, 48%);
+}
+
+.descrp-derecha h2{
+    font-family: 'Fraunces', serif;
+    line-height: .9;
+    padding-right: 6rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.precio{
+    display: flex;
+    align-items: center;
+}
+.precio-rebaja{
+    padding-left: 2rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+
+.precio p{
+    margin: 1rem 0;
+}
+
+.precio-principal{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 3rem;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: .6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn img{
+    padding-right: 1rem;
+}
+
+.btn:hover{
+    background-color: hsl(158, 45%, 25%);
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+    @media (max-width: 670px) {
+        .main{
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+        }
+        .img-izquierda img{
+            border-radius: 1rem 1rem 0 0;
+            height: 30rem;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .img-izquierda{
+            width: 100%;
+            
+        }
+
+        .descrp-derecha{
+            width: 100%;
+            border-radius: 0 0 1rem 1rem;
+        }
+
+      }
